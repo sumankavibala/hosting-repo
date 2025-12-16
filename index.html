@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jane Doe | Frontend Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* CSS Reset and Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f6; /* Light gray background */
+            color: #333;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff; /* Blue link color */
+        }
+
+        /* Header/Navigation */
+        .header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .nav-links li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #ffffff;
+            padding: 6rem 2rem;
+            text-align: center;
+            border-bottom: 5px solid #007bff; /* Accent color under hero */
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .hero h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: #555;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #ffffff;
+            padding: 0.8rem 2rem;
+            border-radius: 5px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+
+        .skill-card {
+            background-color: #ffffff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-card h4 {
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #007bff;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #2c3e50; /* Dark blue/gray */
+            color: #ecf0f1;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+
+        .footer p {
+            margin-bottom: 0.5rem;
+        }
+
+        .social-links a {
+            color: #ecf0f1;
+            margin: 0 10px;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #007bff;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+            }
+
+            .nav-links {
+                margin-top: 1rem;
+            }
+
+            .nav-links li {
+                margin: 0 10px;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero h2 {
+                font-size: 1.2rem;
+            }
+
+            .section {
+                padding: 3rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">Jane Doe</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Crafting Seamless User Experiences.</h1>
+        <h2>I'm a Frontend Developer specializing in React and modern JavaScript.</h2>
+        <a href="#projects" class="cta-button">View My Work</a>
+    </section>
+
+    <section id="about" class="section">
+        <h3>About Me</h3>
+        <p style="text-align: center; max-width: 800px; margin: 0 auto; color: #555;">
+            Passionate about transforming design mockups into living, breathing web applications. 
+            With 4 years of experience, I focus on building responsive, accessible, and performant 
+            interfaces that delight users. I love diving into new frameworks and optimizing frontend build processes.
+        </p>
+    </section>
+
+    <section id="skills" class="section" style="background-color: #ffffff;">
+        <h3>My Core Skills</h3>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h4>JavaScript (ES6+)</h4>
+                <p>Advanced proficiency in modern JS, including async/await and functional programming.</p>
+            </div>
+            <div class="skill-card">
+                <h4>React & Redux</h4>
+                <p>Building scalable single-page applications with component-based architecture.</p>
+            </div>
+            <div class="skill-card">
+                <h4>HTML5 & CSS3</h4>
+                <p>Expert in semantic HTML, SASS/LESS, and responsive design techniques.</p>
+            </div>
+            <div class="skill-card">
+                <h4>Performance & Testing</h4>
+                <p>Focus on web vitals optimization and writing unit/integration tests (Jest, Testing Library).</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h3>Featured Projects</h3>
+        <p style="text-align: center; color: #555;">
+            *This section would typically feature cards linking to project demos/GitHub repos.*<br>
+            <br>
+            **Project 1:** E-commerce Site (React, Stripe)<br>
+            **Project 2:** Portfolio CMS (Next.js, Headless CMS)<br>
+            **Project 3:** Data Visualization Dashboard (Vue.js, D3.js)
+        </p>
+    </section>
+
+    <section id="contact" class="section" style="text-align: center;">
+        <h3>Get In Touch</h3>
+        <p>I'm currently open to new opportunities and collaboration.</p>
+        <a href="mailto:your.email@example.com" class="cta-button" style="margin-top: 1.5rem;">Email Me</a>
+    </section>
+
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#" target="_blank">LinkedIn</a> |
+            <a href="#" target="_blank">GitHub</a> |
+            <a href="#" target="_blank">Twitter</a>
+        </div>
+        <p>&copy; 2025 Jane Doe. Built with HTML & CSS.</p>
+    </footer>
+
+</body>
+</html>
